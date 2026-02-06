@@ -1,0 +1,53 @@
+[game]
+hostname = "[EN][MRP] Mario Station"
+desc = "Imp Station fork with a Mario coat of paint, also random stuff I thought was fun. NOT AFFILIATED WITH NINTENDO OR THE MARIO IP"
+soft_max_players = 100
+# seconds
+# default 120
+round_restart_time = 150
+# default 150
+lobbyduration = 600
+
+[server]
+uptime_restart_minutes = 480
+
+[chat]
+motd = "Hi"
+
+[ic]
+flavor_text = true
+restricted_names = true
+
+[interaction]
+# defaults
+# rate_limit_count = 5
+# rate_limit_period = 0.5
+# rate_limit_announce_admins_delay = 120
+rate_limit_count = 20
+
+[infolinks]
+# discord = ""
+github = "https://github.com/mario-station/mario-station"
+# wiki = ""
+bug_report = "https://github.com/mario-station/mario-station-14/issues"
+# appeal = ""
+
+[looc]
+enabled_dead = false
+
+[shuttle]
+# allows for early shuttle launch with approval of 3 heads
+emergency_early_launch_allowed = true
+
+[ghost]
+# sets time before ghost role buttons enable, so people hopefully Actually Read
+role_time = 10
+
+[tips]
+# this doesn't actually propagate to the client right now
+login_dataset = "LoginTips"
+
+[whitelist]
+enabled = false
+# we do have a whitelist in place, but as of 15 august 2025 the server is open again
+# whitelist cutoff date: ~0:00CT 28 april 2025

@@ -1,0 +1,5 @@
+- type: lobbyBackground
+  id: SMB1
+  background: /Textures/_Mario/LobbyScreens/smb1.png
+  title: lobby-state-background-smb1-title
+  artist: lobby-state-background-smb1-artist
