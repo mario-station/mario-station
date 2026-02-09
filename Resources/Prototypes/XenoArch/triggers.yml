@@ -50,7 +50,7 @@
     TriggerDrinkCogChamp: 0.05
     TriggerDrinkSuiDream: 0.05
     TriggerDrinkDrink: 0.05
-    TriggerDrinkTheeHorsepussy: 0.01
+    TriggerDrinkTheeHorse: 0.01
     TriggerDrinkThreeMileIsland: 0.01
     TriggerDrinkHippiesDelight: 0.01
     TriggerDrinkSalvagersSoothe: 0.01
@@ -61,22 +61,22 @@
   id: TriggerMusic
   tip: xenoarch-trigger-tip-music
   components:
-  - type: XATCompNearby
-    requireComponentWithName: ActiveInstrument
-    radius: 2
-  targetDepths: [ 0, 1, 2 ] # imp edit
+    - type: XATCompNearby
+      requireComponentWithName: ActiveInstrument
+      radius: 2
+  targetDepths: [0, 1, 2] # imp edit
 
 - type: xenoArchTrigger
   id: TriggerHeat
   tip: xenoarch-trigger-tip-heat
   components:
-  - type: XATTemperature
-    targetTemperature: 373
-    triggerOnHigherTemp: true
-  - type: XATDamageThresholdReached
-    typesNeeded:
-      Heat: 20
-  targetDepths: [ 0, 1, 2 ] # imp edit
+    - type: XATTemperature
+      targetTemperature: 373
+      triggerOnHigherTemp: true
+    - type: XATDamageThresholdReached
+      typesNeeded:
+        Heat: 20
+  targetDepths: [0, 1, 2] # imp edit
 # This kinda trivializes the difficulty.
 #  - type: XATToolUse
 #    requiredTool: Welding
@@ -87,252 +87,252 @@
   id: TriggerCold
   tip: xenoarch-trigger-tip-cold
   components:
-  - type: XATTemperature
-    targetTemperature: 255
-    triggerOnHigherTemp: false
-  - type: XATDamageThresholdReached
-    typesNeeded:
-      Cold: 20
-  targetDepths: [ 1, 2, 3 ] # imp edit
+    - type: XATTemperature
+      targetTemperature: 255
+      triggerOnHigherTemp: false
+    - type: XATDamageThresholdReached
+      typesNeeded:
+        Cold: 20
+  targetDepths: [1, 2, 3] # imp edit
 
 - type: xenoArchTrigger
   id: TriggerNoOxygen
   tip: xenoarch-trigger-tip-no-oxygen
   components:
-  - type: XATGas
-    targetGas: Oxygen
-    moles: 10
-    shouldBePresent: false
-  targetDepths: [ 1, 2, 3 ] # imp edit
+    - type: XATGas
+      targetGas: Oxygen
+      moles: 10
+      shouldBePresent: false
+  targetDepths: [1, 2, 3] # imp edit
 
 - type: xenoArchTrigger
   id: TriggerWater
   tip: xenoarch-trigger-tip-water
   components:
-  - type: XATGas
-    targetGas: WaterVapor
-  - type: XATReactive
-    reagents:
-    - Water
-  targetDepths: [ 0, 1, 2 ] # imp edit
+    - type: XATGas
+      targetGas: WaterVapor
+    - type: XATReactive
+      reagents:
+        - Water
+  targetDepths: [0, 1, 2] # imp edit
 
 - type: xenoArchTrigger
   id: TriggerCO2
   tip: xenoarch-trigger-tip-co2
   components:
-  - type: XATGas
-    targetGas: CarbonDioxide
-  - type: XATReactive
-    reagents:
-    - CarbonDioxide
-  targetDepths: [ 1, 2, 3 ] # imp edit
+    - type: XATGas
+      targetGas: CarbonDioxide
+    - type: XATReactive
+      reagents:
+        - CarbonDioxide
+  targetDepths: [1, 2, 3] # imp edit
 
 - type: xenoArchTrigger
   id: TriggerPlasma
   tip: xenoarch-trigger-tip-plasma
   components:
-  - type: XATGas
-    targetGas: Plasma
-  - type: XATReactive
-    reagents:
-    - Plasma
-  targetDepths: [ 2, 3, 4 ] # imp edit
+    - type: XATGas
+      targetGas: Plasma
+    - type: XATReactive
+      reagents:
+        - Plasma
+  targetDepths: [2, 3, 4] # imp edit
 
 - type: xenoArchTrigger
   id: TriggerTritium
   tip: xenoarch-trigger-tip-tritium
   components:
-  - type: XATGas
-    targetGas: Tritium
-  - type: XATReactive
-    reagents:
-    - Tritium
-  targetDepths: [ 3, 4, 5 ] # imp edit
+    - type: XATGas
+      targetGas: Tritium
+    - type: XATReactive
+      reagents:
+        - Tritium
+  targetDepths: [3, 4, 5] # imp edit
 
 - type: xenoArchTrigger
   id: TriggerAmmonia
   tip: xenoarch-trigger-tip-ammonia
   components:
-  - type: XATGas
-    targetGas: Ammonia
-  - type: XATReactive
-    reagents:
-    - Ammonia
-  targetDepths: [ 2, 3, 4 ] # imp edit
+    - type: XATGas
+      targetGas: Ammonia
+    - type: XATReactive
+      reagents:
+        - Ammonia
+  targetDepths: [2, 3, 4] # imp edit
 
 - type: xenoArchTrigger
   id: TriggerN2O
   tip: xenoarch-trigger-tip-n2o
   components:
-  - type: XATGas
-    targetGas: NitrousOxide
-  - type: XATReactive
-    reagents:
-    - NitrousOxide
-  targetDepths: [ 2, 3, 4 ] # imp edit
+    - type: XATGas
+      targetGas: NitrousOxide
+    - type: XATReactive
+      reagents:
+        - NitrousOxide
+  targetDepths: [2, 3, 4] # imp edit
 
 - type: xenoArchTrigger
   id: TriggerFrezon
   tip: xenoarch-trigger-tip-frezon
   components:
-  - type: XATGas
-    targetGas: Frezon
-  - type: XATReactive
-    reagents:
-    - Frezon
-  targetDepths: [ 3, 4, 5 ] # imp edit
+    - type: XATGas
+      targetGas: Frezon
+    - type: XATReactive
+      reagents:
+        - Frezon
+  targetDepths: [3, 4, 5] # imp edit
 
 - type: xenoArchTrigger
   id: TriggerRadiation
   tip: xenoarch-trigger-tip-radiation
   components:
-  - type: XATDamageThresholdReached
-    typesNeeded:
-      Radiation: 20
-  - type: XATReactive #IMP Allow radioactive reagents to trigger
-    reagents:
-    - Uranium
-    - Tritium
-    - Radium
-    - UnstableMutagen
-    - Phalanximine
-    - GrayBlood
-  - type: XATMicrowave #IMP: legendary microwave trigger
-  targetDepths: [ 2, 3, 4 ] # imp edit
+    - type: XATDamageThresholdReached
+      typesNeeded:
+        Radiation: 20
+    - type: XATReactive #IMP Allow radioactive reagents to trigger
+      reagents:
+        - Uranium
+        - Tritium
+        - Radium
+        - UnstableMutagen
+        - Phalanximine
+        - GrayBlood
+    - type: XATMicrowave #IMP: legendary microwave trigger
+  targetDepths: [2, 3, 4] # imp edit
 
 - type: xenoArchTrigger
   id: TriggerPressureHigh
   tip: xenoarch-trigger-tip-pressure-high
   components:
-  - type: XATPressure
-    maxPressureThreshold: 385
-  targetDepths: [ 2, 3, 4 ] # imp edit
+    - type: XATPressure
+      maxPressureThreshold: 385
+  targetDepths: [2, 3, 4] # imp edit
 
 - type: xenoArchTrigger
   id: TriggerPressureLow
   tip: xenoarch-trigger-tip-pressure-low
   components:
-  - type: XATPressure
-    minPressureThreshold: 50
-  targetDepths: [ 0, 1, 2 ] # imp edit
+    - type: XATPressure
+      minPressureThreshold: 50
+  targetDepths: [0, 1, 2] # imp edit
 
 - type: xenoArchTrigger
   id: TriggerExamine
   tip: xenoarch-trigger-tip-examine
   components:
-  - type: XATExamine
-  targetDepths: [ 0, 1, 2 ] # imp edit
+    - type: XATExamine
+  targetDepths: [0, 1, 2] # imp edit
 
 - type: xenoArchTrigger
   id: TriggerBruteDamage
   tip: xenoarch-trigger-tip-brute-damage
   components:
-  - type: XATDamageThresholdReached
-    groupsNeeded:
-      Brute: 20
-  targetDepths: [ 1, 2, 3, 4 ] # imp edit
+    - type: XATDamageThresholdReached
+      groupsNeeded:
+        Brute: 20
+  targetDepths: [1, 2, 3, 4] # imp edit
 
 - type: xenoArchTrigger
   id: TriggerInteraction
   tip: xenoarch-trigger-tip-interaction
   components:
-  - type: XATInteraction
-  targetDepths: [ 0, 1, 2 ] # imp edit
+    - type: XATInteraction
+  targetDepths: [0, 1, 2] # imp edit
 
 - type: xenoArchTrigger
   id: TriggerWrenching
   tip: xenoarch-trigger-tip-wrenching
   components:
-  - type: XATToolUse
-    requiredTool: Anchoring
-  - type: XATExaminableText
-    examineText: xenoarch-trigger-examine-wrenching
-  targetDepths: [ 0, 1, 2 ] # imp edit
+    - type: XATToolUse
+      requiredTool: Anchoring
+    - type: XATExaminableText
+      examineText: xenoarch-trigger-examine-wrenching
+  targetDepths: [0, 1, 2] # imp edit
 
 - type: xenoArchTrigger
   id: TriggerPrying
   tip: xenoarch-trigger-tip-prying
   components:
-  - type: XATToolUse
-    requiredTool: Prying
-  - type: XATExaminableText
-    examineText: xenoarch-trigger-examine-prying
-  targetDepths: [ 0, 1, 2 ] # imp edit
+    - type: XATToolUse
+      requiredTool: Prying
+    - type: XATExaminableText
+      examineText: xenoarch-trigger-examine-prying
+  targetDepths: [0, 1, 2] # imp edit
 
 - type: xenoArchTrigger
   id: TriggerScrewing
   tip: xenoarch-trigger-tip-screwing
   components:
-  - type: XATToolUse
-    requiredTool: Screwing
-  - type: XATExaminableText
-    examineText: xenoarch-trigger-examine-screwing
-  - type: XATReactive # IMP i'm funny
-    reagents:
-    - ScrewdriverCocktail
-  targetDepths: [ 0, 1, 2 ] # imp edit
+    - type: XATToolUse
+      requiredTool: Screwing
+    - type: XATExaminableText
+      examineText: xenoarch-trigger-examine-screwing
+    - type: XATReactive # IMP i'm funny
+      reagents:
+        - ScrewdriverCocktail
+  targetDepths: [0, 1, 2] # imp edit
 
 - type: xenoArchTrigger
   id: TriggerPulsing
   tip: xenoarch-trigger-tip-pulsing
   components:
-  - type: XATToolUse
-    requiredTool: Pulsing
-  - type: XATExaminableText
-    examineText: xenoarch-trigger-examine-pulsing
-  targetDepths: [ 0, 1, 2 ] # imp edit
+    - type: XATToolUse
+      requiredTool: Pulsing
+    - type: XATExaminableText
+      examineText: xenoarch-trigger-examine-pulsing
+  targetDepths: [0, 1, 2] # imp edit
 
 - type: xenoArchTrigger
   id: TriggerTimer
   tip: xenoarch-trigger-tip-timer
   components:
-  - type: XATTimer
-    possibleDelayInSeconds:
-      min: 80
-      max: 120
-  targetDepths: [ 0, 1, 2 ] # imp edit
+    - type: XATTimer
+      possibleDelayInSeconds:
+        min: 80
+        max: 120
+  targetDepths: [0, 1, 2] # imp edit
 
 - type: xenoArchTrigger
   id: TriggerBlood
   tip: xenoarch-trigger-tip-blood
   components:
-  - type: XATReactive
-    reagents:
-    - Blood
-    - CopperBlood
-    - InsectBlood
-    - Slime
-    - AmmoniaBlood
-    - ZombieBlood
-    - Sap
-    # imp below
-    - ShimmeringBlood
-    - BloodKodepiia
-    - GrayBlood
-    - SynthBlood
-    - AnomalocaridCopperBlood
-  targetDepths: [ 1, 2, 3, 4 ] # imp edit
+    - type: XATReactive
+      reagents:
+        - Blood
+        - CopperBlood
+        - InsectBlood
+        - Slime
+        - AmmoniaBlood
+        - ZombieBlood
+        - Sap
+        # imp below
+        - ShimmeringBlood
+        - BloodKodepiia
+        - GrayBlood
+        - SynthBlood
+        - AnomalocaridCopperBlood
+  targetDepths: [1, 2, 3, 4] # imp edit
 
 - type: xenoArchTrigger
   id: TriggerThrow
   tip: xenoarch-trigger-tip-throw
   whitelist:
     components:
-    - Item
+      - Item
   components:
-  - type: XATItemLand
-  targetDepths: [ 0, 1, 2 ] # imp edit
+    - type: XATItemLand
+  targetDepths: [0, 1, 2] # imp edit
 
 - type: xenoArchTrigger
   id: TriggerDeath
   tip: xenoarch-trigger-tip-death
   components:
-  - type: XATDeath
-  targetDepths: [ 1, 2, 3 ] # imp edit
+    - type: XATDeath
+  targetDepths: [1, 2, 3] # imp edit
 
 - type: xenoArchTrigger
   id: TriggerMagnet
   tip: xenoarch-trigger-tip-magnet
   components:
-  - type: XATMagnet
-  targetDepths: [ 1, 2, 3 ] # imp edit
+    - type: XATMagnet
+  targetDepths: [1, 2, 3] # imp edit

@@ -1,13 +1,13 @@
 - type: reagent
-  id: TheeHorsepussy
-  name: reagent-name-theehorsepussy
+  id: TheeHorse
+  name: reagent-name-theehorse
   parent: BaseAlcohol
-  desc: reagent-desc-theehorsepussy
+  desc: reagent-desc-theehorse
   physicalDesc: reagent-physical-desc-evil
-  flavor: horsepussy
+  flavor: horse
   color: "#7BD18C"
   metamorphicSprite:
-    sprite: _Impstation/Objects/Consumable/Drinks/Metamorphic/thee_horsepussy.rsi
+    sprite: _Impstation/Objects/Consumable/Drinks/Metamorphic/thee_horse.rsi
     state: icon_empty
   metamorphicMaxFillLevels: 4
   metamorphicFillBaseName: fill-
@@ -15,27 +15,27 @@
   metabolisms:
     Drink:
       effects:
-      - !type:SatiateThirst
-        factor: 2
-      - !type:AdjustReagent
-        reagent: Desoxyephedrine
-        amount: 0.15
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.15
+        - !type:SatiateThirst
+          factor: 2
+        - !type:AdjustReagent
+          reagent: Desoxyephedrine
+          amount: 0.15
+        - !type:AdjustReagent
+          reagent: Ethanol
+          amount: 0.15
     Medicine:
       effects:
-      - !type:HealthChange
-        probability: 0.99
-        damage:
-          types:
-            Blunt: 100
-        conditions:
-        - !type:ReagentCondition
-          reagent: TheeHorsepussy
-          min: 20
-        - !type:MobStateCondition
-          mobstate: Alive
+        - !type:HealthChange
+          probability: 0.99
+          damage:
+            types:
+              Blunt: 100
+          conditions:
+            - !type:ReagentCondition
+              reagent: TheeHorse
+              min: 20
+            - !type:MobStateCondition
+              mobstate: Alive
 
 - type: reagent
   id: LoveTap
@@ -70,31 +70,31 @@
   metabolisms:
     Drink:
       effects:
-      - !type:SatiateThirst
-        factor: 2
-      - !type:GenericStatusEffect
-        key: Drowsiness
-        time: 5
-        type: Add
+        - !type:SatiateThirst
+          factor: 2
+        - !type:GenericStatusEffect
+          key: Drowsiness
+          time: 5
+          type: Add
     Narcotic:
       effects:
-      - !type:ModifyStatusEffect
-        effectProto: StatusEffectSeeingRainbow
-        type: Add
-        time: 5
+        - !type:ModifyStatusEffect
+          effectProto: StatusEffectSeeingRainbow
+          type: Add
+          time: 5
     Medicine:
       effects:
-      - !type:HealthChange
-        probability: 0.25
-        damage:
-          types:
-            Poison: 5
-        conditions:
-        - !type:ReagentCondition
-          reagent: Reaganomics
-          min: 20
-        - !type:MobStateCondition
-          mobstate: Alive
+        - !type:HealthChange
+          probability: 0.25
+          damage:
+            types:
+              Poison: 5
+          conditions:
+            - !type:ReagentCondition
+              reagent: Reaganomics
+              min: 20
+            - !type:MobStateCondition
+              mobstate: Alive
   fizziness: 0.2
 
 - type: reagent
@@ -130,25 +130,25 @@
   metabolisms:
     Drink:
       effects:
-      - !type:SatiateThirst
-        factor: 2
-      - !type:GenericStatusEffect
-        key: Drowsiness
-        time: 5
-        type: Add
+        - !type:SatiateThirst
+          factor: 2
+        - !type:GenericStatusEffect
+          key: Drowsiness
+          time: 5
+          type: Add
     Medicine:
       effects:
-      - !type:HealthChange
-        probability: 0.25
-        damage:
-          types:
-            Poison: 10
-        conditions:
-        - !type:ReagentCondition
-          reagent: GatorWine
-          min: 20
-        - !type:MobStateCondition
-          mobstate: Alive
+        - !type:HealthChange
+          probability: 0.25
+          damage:
+            types:
+              Poison: 10
+          conditions:
+            - !type:ReagentCondition
+              reagent: GatorWine
+              min: 20
+            - !type:MobStateCondition
+              mobstate: Alive
   fizziness: 0
 
 - type: reagent
@@ -185,18 +185,18 @@
   metabolisms:
     Drink:
       effects:
-      - !type:SatiateThirst
-        factor: 4
-      - !type:AdjustReagent
-        reagent: Oxygen
-        amount: -5
+        - !type:SatiateThirst
+          factor: 4
+        - !type:AdjustReagent
+          reagent: Oxygen
+          amount: -5
     Medicine:
       effects:
-      - !type:HealthChange
-        damage:
-          types:
-            Poison: -0.5
-           # Asphyxiation: -0.25
+        - !type:HealthChange
+          damage:
+            types:
+              Poison: -0.5
+              # Asphyxiation: -0.25
   fizziness: .7
 
 - type: reagent
@@ -266,25 +266,25 @@
   metabolisms:
     Drink:
       effects:
-      - !type:SatiateThirst
-        factor: 4
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.1
-      - !type:AdjustReagent
-        reagent: CarpoToxin
-        amount: -0.25
+        - !type:SatiateThirst
+          factor: 4
+        - !type:AdjustReagent
+          reagent: Ethanol
+          amount: 0.1
+        - !type:AdjustReagent
+          reagent: CarpoToxin
+          amount: -0.25
     Medicine:
       effects:
-      - !type:HealthChange
-        probability: 0.75
-        damage:
-          types:
-            Poison: -1
-            Asphyxiation: -1
-            Bloodloss: -0.5
-          groups:
-            Brute: -2
+        - !type:HealthChange
+          probability: 0.75
+          damage:
+            types:
+              Poison: -1
+              Asphyxiation: -1
+              Bloodloss: -0.5
+            groups:
+              Brute: -2
   fizziness: .7
 
 - type: reagent
@@ -305,11 +305,11 @@
   metabolisms:
     Drink:
       effects:
-      - !type:SatiateThirst
-        factor: 2
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.35
+        - !type:SatiateThirst
+          factor: 2
+        - !type:AdjustReagent
+          reagent: Ethanol
+          amount: 0.35
   fizziness: 0.1
 
 - type: reagent
@@ -330,25 +330,25 @@
   metabolisms:
     Drink:
       effects:
-      - !type:SatiateThirst
-        factor: 4
-      - !type:SatiateHunger
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [ Moth ]
-        factor: 4
-      - !type:Emote
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [ Moth ]
-        emote: Squeak
-        showInChat: true
-        force: true
-        probability: 0.35
+        - !type:SatiateThirst
+          factor: 4
+        - !type:SatiateHunger
+          conditions:
+            - !type:MetabolizerTypeCondition
+              type: [Moth]
+          factor: 4
+        - !type:Emote
+          conditions:
+            - !type:MetabolizerTypeCondition
+              type: [Moth]
+          emote: Squeak
+          showInChat: true
+          force: true
+          probability: 0.35
     Medicine:
       effects:
-      - !type:ModifyBleed
-        amount: -0.75
+        - !type:ModifyBleed
+          amount: -0.75
   fizziness: .1
 
 - type: reagent
@@ -369,8 +369,8 @@
   metabolisms:
     Drink:
       effects:
-      - !type:SatiateThirst
-        factor: 2
+        - !type:SatiateThirst
+          factor: 2
   fizziness: .1
 
 - type: reagent
@@ -390,16 +390,16 @@
   metabolisms:
     Drink:
       effects:
-      - !type:SatiateThirst
-        factor: 5
-      - !type:Emote
-        conditions:
-        - !type:ReagentCondition
-          reagent: StarryNight
-          min: 27          # this should proc only once after drinking 30u in one go
-          max: 27
-        emote: Yawn
-        showInChat: true
+        - !type:SatiateThirst
+          factor: 5
+        - !type:Emote
+          conditions:
+            - !type:ReagentCondition
+              reagent: StarryNight
+              min: 27 # this should proc only once after drinking 30u in one go
+              max: 27
+          emote: Yawn
+          showInChat: true
   fizziness: 0.5
 
 - type: reagent
@@ -441,7 +441,7 @@
               max: 10
           visualType: SmallCaution
           type: Local
-          messages: [ "uap-effect-n1"]
+          messages: ["uap-effect-n1"]
           probability: 0.1
         - !type:PopupMessage
           conditions:
@@ -451,7 +451,7 @@
               max: 20
           visualType: MediumCaution
           type: Local
-          messages: [ "uap-effect-n2" ]
+          messages: ["uap-effect-n2"]
           probability: 0.1
         - !type:PopupMessage
           conditions:
@@ -460,7 +460,7 @@
               min: 20
           visualType: LargeCaution
           type: Local
-          messages: [ "uap-effect-med" ]
+          messages: ["uap-effect-med"]
           probability: 0.1
 
 - type: reagent
@@ -481,24 +481,24 @@
   metabolisms:
     Drink:
       effects:
-      - !type:SatiateThirst
-        factor: 4
-      - !type:Emote
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [ Reptilian ]
-        emote: Thump
-        showInChat: false
-        force: true
-        probability: 0.6
-      - !type:Emote
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [ Reptilian ]
-        emote: Thump
-        showInChat: true
-        force: true
-        probability: 0.2
+        - !type:SatiateThirst
+          factor: 4
+        - !type:Emote
+          conditions:
+            - !type:MetabolizerTypeCondition
+              type: [Reptilian]
+          emote: Thump
+          showInChat: false
+          force: true
+          probability: 0.6
+        - !type:Emote
+          conditions:
+            - !type:MetabolizerTypeCondition
+              type: [Reptilian]
+          emote: Thump
+          showInChat: true
+          force: true
+          probability: 0.2
   fizziness: .1
 
 - type: reagent
@@ -519,11 +519,11 @@
   metabolisms:
     Drink:
       effects:
-      - !type:SatiateThirst
-        factor: 1
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.5
+        - !type:SatiateThirst
+          factor: 1
+        - !type:AdjustReagent
+          reagent: Ethanol
+          amount: 0.5
 
 - type: reagent
   id: CleverGirl
@@ -543,11 +543,11 @@
   metabolisms:
     Drink:
       effects:
-      - !type:SatiateThirst
-        factor: 2
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.2
+        - !type:SatiateThirst
+          factor: 2
+        - !type:AdjustReagent
+          reagent: Ethanol
+          amount: 0.2
 
 - type: reagent
   id: LovePotion
@@ -566,8 +566,8 @@
   metabolisms:
     Drink:
       effects:
-      - !type:SatiateThirst
-        factor: 2
+        - !type:SatiateThirst
+          factor: 2
   fizziness: .1
 
 - type: reagent
@@ -587,11 +587,11 @@
   metabolisms:
     Drink:
       effects:
-      - !type:SatiateThirst
-        factor: 2
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.2
+        - !type:SatiateThirst
+          factor: 2
+        - !type:AdjustReagent
+          reagent: Ethanol
+          amount: 0.2
 
 - type: reagent
   id: LungClogger
@@ -610,16 +610,16 @@
   metabolisms:
     Drink:
       effects:
-      - !type:SatiateThirst
-        factor: 2
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.15
-      - !type:Emote
-        emote: Cough
-        showInChat: true
-        force: true
-        probability: 0.15
+        - !type:SatiateThirst
+          factor: 2
+        - !type:AdjustReagent
+          reagent: Ethanol
+          amount: 0.15
+        - !type:Emote
+          emote: Cough
+          showInChat: true
+          force: true
+          probability: 0.15
   fizziness: .4
 
 - type: reagent
@@ -639,21 +639,21 @@
   metabolisms:
     Drink:
       effects:
-      - !type:SatiateThirst
-        factor: 2
-      - !type:Emote
-        emote: Yawn
-        showInChat: true
-        force: true
-        probability: 0.05
-      - !type:MovementSpeedModifier
-        walkSpeedModifier: 0.85
-        sprintSpeedModifier: 0.85
-      - !type:GenericStatusEffect
-        key: Drowsiness
-        component: Drowsiness
-        time: 2
-        type: Add
+        - !type:SatiateThirst
+          factor: 2
+        - !type:Emote
+          emote: Yawn
+          showInChat: true
+          force: true
+          probability: 0.05
+        - !type:MovementSpeedModifier
+          walkSpeedModifier: 0.85
+          sprintSpeedModifier: 0.85
+        - !type:GenericStatusEffect
+          key: Drowsiness
+          component: Drowsiness
+          time: 2
+          type: Add
   fizziness: .1
 
 - type: reagent
@@ -673,15 +673,15 @@
   metabolisms:
     Drink:
       effects:
-      - !type:SatiateThirst
-        factor: 2
+        - !type:SatiateThirst
+          factor: 2
     Medicine:
       effects:
-      - !type:HealthChange
-        probability: 0.75
-        damage:
-          types:
-            Asphyxiation: -1
+        - !type:HealthChange
+          probability: 0.75
+          damage:
+            types:
+              Asphyxiation: -1
   fizziness: .9
 
 - type: reagent
@@ -701,22 +701,22 @@
   metabolisms:
     Drink:
       effects:
-      - !type:SatiateThirst
-        factor: 2
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.15
+        - !type:SatiateThirst
+          factor: 2
+        - !type:AdjustReagent
+          reagent: Ethanol
+          amount: 0.15
     Poison:
       effects:
-      - !type:HealthChange
-        conditions:
-        - !type:ReagentCondition
-          reagent: MinotaursLament
-          min: 20
-        probability: 0.75
-        damage:
-          types:
-            Poison: .3
+        - !type:HealthChange
+          conditions:
+            - !type:ReagentCondition
+              reagent: MinotaursLament
+              min: 20
+          probability: 0.75
+          damage:
+            types:
+              Poison: .3
   fizziness: .2
 
 - type: reagent
@@ -736,11 +736,11 @@
   metabolisms:
     Drink:
       effects:
-      - !type:SatiateThirst
-        factor: 2
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.15
+        - !type:SatiateThirst
+          factor: 2
+        - !type:AdjustReagent
+          reagent: Ethanol
+          amount: 0.15
     Poison:
       effects:
         - !type:AdjustTemperature
@@ -755,7 +755,7 @@
               Heat: .5
         - !type:PopupMessage
           type: Local
-          messages: [ "capsaicin-effect-light-burn" ]
+          messages: ["capsaicin-effect-light-burn"]
           probability: 0.2
   fizziness: .5
 
@@ -776,15 +776,15 @@
   metabolisms:
     Drink:
       effects:
-      - !type:SatiateThirst
-        factor: 2
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.25
+        - !type:SatiateThirst
+          factor: 2
+        - !type:AdjustReagent
+          reagent: Ethanol
+          amount: 0.25
     Poison:
       effects:
-      - !type:Electrocute
-        probability: 0.05
+        - !type:Electrocute
+          probability: 0.05
   fizziness: .5
 
 - type: reagent
@@ -804,31 +804,31 @@
   metabolisms:
     Drink:
       effects:
-      - !type:SatiateThirst
-        factor: 1
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.5
+        - !type:SatiateThirst
+          factor: 1
+        - !type:AdjustReagent
+          reagent: Ethanol
+          amount: 0.5
     Narcotic:
       effects:
-      - !type:SatiateThirst
-        factor: 1
-      - !type:ModifyStatusEffect
-        effectProto: StatusEffectSeeingRainbow
-        type: Add
-        time: 4
-      - !type:PopupMessage
-        type: Local
-        visualType: Medium
-        messages: [ "frezon-euphoric" ]
-        probability: 0.05
+        - !type:SatiateThirst
+          factor: 1
+        - !type:ModifyStatusEffect
+          effectProto: StatusEffectSeeingRainbow
+          type: Add
+          time: 4
+        - !type:PopupMessage
+          type: Local
+          visualType: Medium
+          messages: ["frezon-euphoric"]
+          probability: 0.05
     Poison:
       effects:
-      - !type:AdjustTemperature
-        conditions:
-        - !type:TemperatureCondition
-          min: 200
-        amount: -7500
+        - !type:AdjustTemperature
+          conditions:
+            - !type:TemperatureCondition
+              min: 200
+          amount: -7500
   fizziness: 0.1
 
 - type: reagent
@@ -848,19 +848,19 @@
   metabolisms:
     Drink:
       effects:
-      - !type:SatiateThirst
-        factor: 1
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.35
+        - !type:SatiateThirst
+          factor: 1
+        - !type:AdjustReagent
+          reagent: Ethanol
+          amount: 0.35
     Narcotic:
       effects:
-      - !type:SatiateThirst
-        factor: 1
-      - !type:ModifyStatusEffect
-        effectProto: StatusEffectSeeingRainbow
-        type: Add
-        time: 5
+        - !type:SatiateThirst
+          factor: 1
+        - !type:ModifyStatusEffect
+          effectProto: StatusEffectSeeingRainbow
+          type: Add
+          time: 5
   fizziness: 0.1
 
 - type: reagent
@@ -880,27 +880,27 @@
   metabolisms:
     Drink:
       effects:
-      - !type:SatiateThirst
-        factor: 1
-      - !type:MovementSpeedModifier
-        conditions:
-        - !type:ReagentCondition
-          reagent: BatteryAcid
-          min: 20
-        walkSpeedModifier: 1.02
-        sprintSpeedModifier: 1.02
-        probability: 0.02
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.2
+        - !type:SatiateThirst
+          factor: 1
+        - !type:MovementSpeedModifier
+          conditions:
+            - !type:ReagentCondition
+              reagent: BatteryAcid
+              min: 20
+          walkSpeedModifier: 1.02
+          sprintSpeedModifier: 1.02
+          probability: 0.02
+        - !type:AdjustReagent
+          reagent: Ethanol
+          amount: 0.2
     Poison:
       effects:
-      - !type:Electrocute
-        conditions:
-        - !type:ReagentCondition
-          reagent: BatteryAcid
-          min: 20
-        probability: 0.02
+        - !type:Electrocute
+          conditions:
+            - !type:ReagentCondition
+              reagent: BatteryAcid
+              min: 20
+          probability: 0.02
   fizziness: .3
 
 - type: reagent
@@ -936,11 +936,11 @@
   metabolisms:
     Drink:
       effects:
-      - !type:SatiateThirst
-        factor: 2
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.2
+        - !type:SatiateThirst
+          factor: 2
+        - !type:AdjustReagent
+          reagent: Ethanol
+          amount: 0.2
 
 - type: reagent
   id: LaFleurette
@@ -960,11 +960,11 @@
   metabolisms:
     Drink:
       effects:
-      - !type:SatiateThirst
-        factor: 2
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.2
+        - !type:SatiateThirst
+          factor: 2
+        - !type:AdjustReagent
+          reagent: Ethanol
+          amount: 0.2
 
 - type: reagent
   id: RomanceDead
@@ -984,11 +984,11 @@
   metabolisms:
     Drink:
       effects:
-      - !type:SatiateThirst
-        factor: 2
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.2
+        - !type:SatiateThirst
+          factor: 2
+        - !type:AdjustReagent
+          reagent: Ethanol
+          amount: 0.2
 
 - type: reagent
   id: RomanceDeadNot
@@ -1008,8 +1008,8 @@
   metabolisms:
     Drink:
       effects:
-      - !type:SatiateThirst
-        factor: 2
+        - !type:SatiateThirst
+          factor: 2
 
 - type: reagent
   id: RoseMilk
@@ -1029,5 +1029,5 @@
   metabolisms:
     Drink:
       effects:
-      - !type:SatiateThirst
-        factor: 2
+        - !type:SatiateThirst
+          factor: 2

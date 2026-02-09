@@ -1,7 +1,7 @@
 - type: reaction
   id: UAP
   requiredMixerCategories:
-  - Stir
+    - Stir
   reactants:
     XenoBasher:
       amount: 1
@@ -20,7 +20,7 @@
 
 # Razz whatever the fuck you did here has caused horrible things
 - type: reaction
-  id: TheeHorsepussy
+  id: TheeHorse
   requiredMixerCategories:
     - Stir
   reactants:
@@ -31,7 +31,7 @@
     Desoxyephedrine:
       amount: 1
   products:
-    TheeHorsepussy: 3
+    TheeHorse: 3
   sound:
     path: /Audio/_Impstation/Animals/spooky_horse.ogg
 
@@ -339,7 +339,7 @@
 - type: reaction
   id: TheGrease
   requiredMixerCategories:
-  - Stir
+    - Stir
   reactants:
     DontTell:
       amount: 3
@@ -600,7 +600,7 @@
 - type: reaction
   id: AngelsKiss
   requiredMixerCategories:
-  - Stir
+    - Stir
   reactants:
     Rum:
       amount: 1
@@ -614,7 +614,7 @@
 - type: reaction
   id: PinkRose
   requiredMixerCategories:
-  - Stir
+    - Stir
   reactants:
     Gin:
       amount: 1
@@ -639,7 +639,7 @@
 - type: reaction
   id: RomanceDead
   requiredMixerCategories:
-  - Stir
+    - Stir
   reactants:
     Gin:
       amount: 1
@@ -653,7 +653,7 @@
 - type: reaction
   id: RomanceDeadNot
   requiredMixerCategories:
-  - Stir
+    - Stir
   reactants:
     JuiceLemon:
       amount: 1
@@ -667,7 +667,7 @@
 - type: reaction
   id: RoseMilk
   requiredMixerCategories:
-  - Stir
+    - Stir
   reactants:
     JuiceRose:
       amount: 1

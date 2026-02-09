@@ -21,7 +21,7 @@ flavor-complex-zombieslushie = like frostbitten meat
 flavor-complex-lovepotion = like love
 
 flavor-complex-apple-martini-crystal-lite = tastes like imitation appletini
-flavor-complex-horsepussy = tastes like death and a subsequent memorial
+flavor-complex-horse = tastes like death and a subsequent memorial
 flavor-complex-grease = tastes thick, slimy, and a bit bitter
 
 flavor-complex-cigarettes = like cigarettes
