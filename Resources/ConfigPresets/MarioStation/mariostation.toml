@@ -6,7 +6,7 @@ soft_max_players = 100
 # default 120
 round_restart_time = 150
 # default 150
-lobbyduration = 600
+lobbyduration = 180
 
 [server]
 uptime_restart_minutes = 480
@@ -29,7 +29,7 @@ rate_limit_count = 20
 # discord = ""
 github = "https://github.com/mario-station/mario-station"
 # wiki = ""
-bug_report = "https://github.com/mario-station/mario-station-14/issues"
+bug_report = "https://github.com/mario-station/mario-station/issues"
 # appeal = ""
 
 [looc]
