@@ -2,8 +2,8 @@
   id: LobbyMusicMario
   files:
     - /Audio/Lobby/mod.flip-flap.ogg
-    - /Audio/_Mario/Lobby/get_a_brian_morans.ogg
-    - /Audio/_Mario/Lobby/surfing_on_a_sine_wave.ogg
+    - /Audio/_Mario/Music/get_a_brian_morans.ogg
+    - /Audio/_Mario/Music/surfing_on_a_sine_wave.ogg
     - /Audio/_Impstation/Music/a_line_in_the_sand.ogg
     - /Audio/_Impstation/Music/ai_bomb.ogg
     - /Audio/_Impstation/Music/rolling_down_the_street_in_my_katamari.ogg
