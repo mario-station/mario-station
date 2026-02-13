@@ -7,14 +7,14 @@
   id: DefaultRuleset
   name: guide-entry-rules
   ruleEntry: true
-  text: "/ServerInfo/_Impstation/Guidebook/ServerRules/newrules.xml"
-  children:
-  - CoreRules
-  - RoleplayRules
-  - MetashieldRules
-  - AdditionalRoleRules
-  - RoleplayGuidelines
-  - Escalation
+  text: "/ServerInfo/_Mario/Guidebook/ServerRules/rules.xml" # mario edit
+  # children:
+  # - CoreRules
+  # - RoleplayRules
+  # - MetashieldRules
+  # - AdditionalRoleRules
+  # - RoleplayGuidelines
+  # - Escalation
 
 - type: guideEntry
   id: RoleTypes
